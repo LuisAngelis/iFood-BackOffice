@@ -3,6 +3,9 @@
 
 Este projeto foi desenvolvido como parte de um desafio da FIAP para criar um sistema back-office voltado para ajudar os parceiros do iFood (lojistas e restaurantes) a gerenciar suas finanças de forma eficiente. O sistema fornece uma visão detalhada dos dados financeiros, permitindo aos usuários tomarem decisões estratégicas baseadas em insights valiosos.
 
+![image](https://github.com/user-attachments/assets/be51b11f-5639-4541-9558-d95015ec1310)
+
+
 🎯 Objetivo
 
 Criar uma plataforma que facilite o controle financeiro dos lojistas parceiros do iFood, oferecendo funcionalidades que simplificam a administração de receitas, despesas e métricas de desempenho. Além disso, o projeto apresenta sugestões de ferramentas e insights.
