@@ -1,7 +1,7 @@
 # iFood-BackOffice
 📌 Descrição do Projeto
 
-Este projeto foi desenvolvido como parte de um desafio da FIAP para criar um sistema back-office voltado para ajudar os parceiros do iFood (lojistas e restaurantes) a gerenciar suas finanças de forma eficiente. O sistema fornece uma visão detalhada dos dados financeiros, permitindo aos usuários tomarem decisões estratégicas baseadas em insights valiosos.
+Com a parceria de IFOOD com a FIAP foi proposto um desafio de criar um sistema back-office voltado para ajudar os parceiros do iFood (lojistas e restaurantes) a gerenciar suas finanças de forma eficiente. O sistema fornece uma visão detalhada dos dados financeiros, permitindo aos usuários tomarem decisões estratégicas baseadas em insights valiosos.
 
 ![image](https://github.com/user-attachments/assets/be51b11f-5639-4541-9558-d95015ec1310)
 
