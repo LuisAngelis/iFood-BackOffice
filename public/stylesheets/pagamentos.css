@@ -1,0 +1,22 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.card-header i {
+    margin-right: 5px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #fff;
+}

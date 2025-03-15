@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFood - Login</title>
+    <link rel="stylesheet" href="../public/stylesheets/stylelucas.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="#">
+                <img src="../public/images/ifood logo 1.jpg" alt="Logo iFood" class="logo">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="login">
+                <div class="login-image">
+                    <img src="../public/images/profit.jpg" alt="Imagem da tela de login" />
+                </div>
+                <div class="login-form">
+                    <h2>Entrar</h2>
+                    <p>Bem-Vindo ao i-Food business, entre em sua conta e obtenha o controle financeiro que sempre
+                        desejou!</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Nome de usuário</label>
+                            <input type="text" id="username" placeholder="Nome de usuário" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password" placeholder="Senha" required>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="remember-me">
+                            <label for="remember-me">Lembrar de mim</label>
+                            <a href="#" class="forgot-password">Esqueci minha senha</a>
+                        </div>
+                        <button type="button" class="btn-primary" onclick="window.location.href='./dashboard.html';">ENTRAR</button>
+                        <p class="signup">Ainda não possui uma conta? <a href="./register.html">Registre-se aqui</a></p>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>iFood</h3>
+                    <ul>
+                        <li><a href="#">Site Institucional</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Entregadores</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Descubra</h3>
+                    <ul>
+                        <li><a href="#">O que é o iFood?</a></li>
+                        <li><a href="#">iFood Shop</a></li>
+                        <li><a href="#">iFood Card</a></li>
+                        <li><a href="#">Blog iFood Empresas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <ul class="social-links">
+                        <li><a href="https://web.facebook.com/iFood/?locale=pt_BR&_rdc=1&_rdr" target="_blank"><i
+                                    class='bx bxl-facebook-circle'></i>
+                        <li><a href="https://twitter.com/ifood" target="_blank"><i class='bx bxl-twitter'></i>
+                        <li><a href="https://www.youtube.com/channel/UCGS5HOYSwHvxE_R8Swmfskg" target="_blank"><i
+                                    class='bx bxl-youtube'></i>
+                        <li><a href="https://www.youtube.com/channel/UCGS5HOYSwHvxE_R8Swmfskg" target="_blank"><i
+                                    class='bx bxl-instagram-alt'></i>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

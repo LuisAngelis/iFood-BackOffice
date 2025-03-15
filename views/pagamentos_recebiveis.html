@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamentos e Recebíveis</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/stylesheets/pagamentos.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row justify-content-between align-items-center py-3">
+            <div class="col-auto">
+                <h1>Pagamentos e Recebíveis</h1>
+                <p class="text-muted">Home/ pagamentos e recebíveis</p>
+            </div>
+        </div>
+    </header>
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="fas fa-plus-circle"></i> Total Líquido
+                        </div>
+                        <div>
+                            <i class="fas fa-minus-circle"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">R$ 2.100,00</h5>
+                        <p class="card-text">
+                            Via iFood
+                            <br>
+                            Pix R$1.200 Débito R$ 1.200 Crédito R$ 1.200
+                            <br>
+                            Bruto R$ 3.800,00 Líquido R$ 3.000,00
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="fas fa-minus-circle"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus-circle"></i> Total
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">R$ 2.100,00</h5>
+                        <p class="card-text">
+                            Via Loja:
+                            <br>
+                            Pix R$1.200 Débito R$ 1.200 Crédito R$ 1.200
+                            <br>
+                            Bruto R$ 3.800,00 Liquido R$ 3.000,00
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2 class="mb-3">Pagamentos</h2>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Pesquisar..." aria-label="Pesquisar..." aria-describedby="basic-addon1">
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="btn btn-secondary mr-2"><i class="fas fa-filter"></i> Filtrar</button>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Adicionar</button>
+                        <button type="button" class="btn btn-secondary ml-2"><i class="fas fa-edit"></i> Editar</button>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Data <i class="fas fa-sort-up"></i> <i class="fas fa-sort-down"></i></th>
+                                <th scope="col">Tipo <i class="fas fa-sort-up"></i> <i class="fas fa-sort-down"></i></th>
+                                <th scope="col">Valor Bruto <i class="fas fa-sort-up"></i> <i class="fas fa-sort-down"></i></th>
+                                <th scope="col">Taxa <i class="fas fa-sort-up"></i> <i class="fas fa-sort-down"></i></th>
+                                <th scope="col">Valor Líquido <i class="fas fa-sort-up"></i> <i class="fas fa-sort-down"></i></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10 junho 09:00</td>
+                                <td><i class="fas fa-credit-card"></i> Crédito i-food</td>
+                                <td>R$ 180,00</td>
+                                <td>0.1%</td>
+                                <td>R$ 179,82</td>
+                            </tr>
+                            <tr>
+                                <td>10 junho 09:00</td>
+                                <td><i class="fas fa-credit-card"></i> Crédito i-food</td>
+                                <td>R$ 180,00</td>
+                                <td>0.7%</td>
+                                <td>R$ 179,82</td>
+                            </tr>
+                            <tr>
+                                <td>10 junho 09:00</td>
+                                <td><i class="fas fa-credit-card"></i> Crédito i-food</td>
+                                <td>R$ 180,00</td>
+                                <td>0.1%</td>
+                                <td>R$ 179,82</td>
+                            </tr>
+                            <tr>
+                                <td>10 junho 09:00</td>
+                                <td><i class="fas fa-credit-card"></i> Crédito i-food</td>
+                                <td>R$ 180,00</td>
+                                <td>0.1%</td>
+                                <td>R$ 179,82</td>
+                            </tr>
+                            <tr>
+                                <td>10 junho 09:00</td>
+                                <td><i class="fas fa-credit-card"></i> Crédito i-food</td>
+                                <td>R$ 180,00</td>
+                                <td>0.1%</td>
+                                <td>R$ 179,82</td>
+                            </tr>
+                            <tr>
+                                <td>10 junho 09:00</td>
+                                <td><i class="fas fa-credit-card"></i> Crédito i-food</td>
+                                <td>R$ 180,00</td>
+                                <td>0.1%</td>
+                                <td>R$ 179,82</td>
+                            </tr>
+                            <tr>
+                                <td>10 junho 09:00</td>
+                                <td><i class="fas fa-credit-card"></i> Crédito i-food</td>
+                                <td>R$ 180,00</td>
+                                <td>0.1%</td>
+                                <td>R$ 179,82</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2 class="mb-3">Recebimentos</h2>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Pesquisar..." aria-label="Pesquisar..." aria-describedby="basic-addon1">
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="btn btn-secondary mr-2"><i class="fas fa-filter"></i> Filtrar</button>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Adicionar</button>
+                        <button type="button" class="btn btn-secondary ml-2"><i class="fas fa-edit"></i> Editar</button>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Data <i class="fas fa-sort-up"></i> <i class="fas fa-sort-down"></i></th>
+                                <th scope="col">Tipo <i class="fas fa-sort-up"></i> <i class="fas fa-sort-down"></i></th>
+                                <th scope="col">Valor Recebido <i class="fas fa-sort-up"></i> <i class="fas fa-sort-down"></i></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10 junho 09:00</td>
+                                <td><i class="fas fa-credit-card"></i> Crédito i-food</td>
+                                <td>R$ 180,00</td>
+                            </tr>
+                            <tr>
+                                <td>10 junho 09:00</td>
+                                <td><i class="fas fa-credit-card"></i> Crédito i-food</td>
+                                <td>R$ 180,00</td>
+                            </tr>
+                            <tr>
+                                <td>10 junho 09:00</td>
+                                <td><i class="fas fa-credit-card"></i> Crédito i-food</td>
+                                <td>R$ 180,00</td>
+                            </tr>
+                            <tr>
+                                <td>10 junho 09:00</td>
+                                <td><i class="fas fa-credit-card"></i> Crédito i-food</td>
+                                <td>R$ 180,00</td>
+                            </tr>
+                            <tr>
+                                <td>10 junho 09:00</td>
+                                <td><i class="fas fa-credit-card"></i> Crédito i-food</td>
+                                <td>R$ 180,00</td>
+                            </tr>
+                            <tr>
+                                <td>10 junho 09:00</td>
+                                <td><i class="fas fa-credit-card"></i> Crédito i-food</td>
+                                <td>R$ 180,00</td>
+                            </tr>
+                            <tr>
+                                <td>10 junho 09:00</td>
+                                <td><i class="fas fa-credit-card"></i> Crédito i-food</td>
+                                <td>R$ 180,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>

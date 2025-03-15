@@ -1,0 +1,95 @@
+:root{
+    --red-primary: #ff0000;
+    --red-secundary: #FFE2E5;
+    --light: #F9F9F9;
+    --grey: #F3F3F3;
+    --green: #bfffd5;
+
+}
+body{
+    background-color: var(--grey);
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.sidebar {
+    width: 200px;
+    min-height: 100%;
+    transition: width 0.3s ease;
+    background-color: var(--light);
+    flex-shrink: 0;
+}
+.sidebar h4{
+    color: grey
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: #141414;
+}
+.sidebar.hidden {
+    width: 80px;
+    
+}
+
+.sidebar.hidden  li{
+    display: none;
+}
+
+#btn-menu {
+    cursor: pointer;
+}
+.disabilited{
+    cursor: no-drop;
+}
+
+main{
+    height: 100vh;
+ 
+}
+
+.profile{
+    min-height: 60%;
+    max-height: 100%;
+    padding: 15px;
+    color: var(--light);
+    background-color: #531919;
+    border-radius: 10px;
+}
+.profile-name{
+    width: 100%;
+}
+.profile-name img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.edit-button button{
+    padding: 5px;
+    background-color: var(--red-primary);
+    color: var(--light);
+    border-radius: 10px;
+}
+
+.profile-info i,span{
+    color: #cecece;
+}
+
+.profile-config h6{
+    font-weight: 400;
+}
+
+.profile-config span{
+    font-weight: 300;
+    color: #575757;
+}
+
+.profile-config a{
+    padding: 3px;
+    font-weight: 200;
+    text-decoration: none;
+    color: var(--light);
+    background: #531919c2;
+    border-radius: 5px;
+}

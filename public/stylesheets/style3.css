@@ -1,0 +1,272 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.btn-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: .25rem .5rem;
+  font-weight: 600;
+  color: #696969;
+  background-color: transparent;
+  border: 0;
+}
+
+.btn-toggle:hover,
+.btn-toggle:focus {
+  background-color: #ea1d2b3b;
+  color: #696969;
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba(0,0,0,.5)' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  display: inline-flex;
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+  text-decoration: none;
+}
+
+.btn-toggle-nav i{
+  color: #868686;
+}
+
+
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+  background-color: #ea1d2b15;
+}
+
+.sidebar {
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link.active {
+  background-color: #e9ecef;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #333;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 5px;
+  color: #6c757d;
+}
+
+.card-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.mr-3 {
+  margin-right: 1rem;
+}
+
+.media-body {
+  flex: 1;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+.badge-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.badge-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+canvas {
+  width: 100%;
+  height: 400px;
+}
+
+/* Estilos para o header */
+.sidebar-header {
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #e9ecef;
+  text-align: center;
+}
+
+.sidebar-header img {
+  width: 150px;
+  height: auto;
+}
+
+/* Estilos para o usuário */
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.user-name {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Estilos para o botão de menu */
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.sidebar-toggle i {
+  font-size: 20px;
+  color: #333;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+  .sidebar {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      transition: left 0.3s ease;
+  }
+
+  .main-content {
+      margin-left: 250px;
+      transition: margin-left 0.3s ease;
+  }
+
+  .sidebar-toggle {
+      display: block;
+  }
+
+  .sidebar.show {
+      left: 0;
+  }
+
+  .main-content.show {
+      margin-left: 250px;
+  }
+}

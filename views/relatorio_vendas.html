@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/stylesheets/style3.css">
+    <title>Relatório de Vendas</title>
+</head>
+
+<body>
+    <div class="container-fluid"></div>
+    <div class="row">
+        <div class="col-md-2 sidebar">
+            <div class="sidebar-header">
+                <img src="../public/images/ifood-logo.png" alt="ifood" class="logo">
+            </div>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="./dashboard.html">
+                        <i class="fas fa-chart-bar"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        Pedidos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-money-bill-wave"></i>
+                        Saldo e Transações
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <i class="fas fa-chart-line"></i>
+                        Relatório de vendas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-cog"></i>
+                        Configuração
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-credit-card"></i>
+                        Pagamentos e recebíveis
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Sair
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-10 main-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page-title">Relatório de Vendas</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5 class="card-title">Periodo Principal</h5>
+                                    <select class="form-control">
+                                        <option value="last7days" selected>Últimos 7 dias</option>
+                                        <option value="last30days">Últimos 30 dias</option>
+                                        <option value="thisMonth">Este Mês</option>
+                                        <option value="lastMonth">Mês Passado</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="card-title">Comparar com</h5>
+                                    <select class="form-control">
+                                        <option value="previousPeriod" selected>Periodo Anterior</option>
+                                        <option value="lastYear">Ano Passado</option>
+                                        <option value="customPeriod">Periodo Personalizado</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="card-title">Filtro</h5>
+                                    <select class="form-control">
+                                        <option value="all" selected>Todos</option>
+                                        <option value="burgers">Burgers</option>
+                                        <option value="fries">Batatas Fritas</option>
+                                        <option value="drinks">Bebidas</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6 class="card-subtitle mb-2 text-muted">Vendas Brutas</h6>
+                                    <h3 class="card-text">R$ 0 -%</h3>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="card-subtitle mb-2 text-muted">Unidades Vendidas</h6>
+                                    <h3 class="card-text">R$ 0 -%</h3>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="card-subtitle mb-2 text-muted">Preço Médio</h6>
+                                    <h3 class="card-text">R$ 0 -%</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <canvas id="chartVendas"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">Métricas do seus anúncios</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6 class="card-subtitle mb-2 text-muted">Visitas</h6>
+                                    <canvas id="chartVisitas"></canvas>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="card-subtitle mb-2 text-muted">Quantidade de vendas</h6>
+                                    <canvas id="chartVendasAnuncios"></canvas>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="card-subtitle mb-2 text-muted">Conversão</h6>
+                                    <canvas id="chartConversao"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5 class="card-title">Periodo Principal</h5>
+                                    <select class="form-control">
+                                        <option value="last7days" selected>08 Jun. a 15 Jun. 2024</option>
+                                        <option value="last30days">Últimos 30 dias</option>
+                                        <option value="thisMonth">Este Mês</option>
+                                        <option value="lastMonth">Mês Passado</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="card-title">Comparar com</h5>
+                                    <select class="form-control">
+                                        <option value="previousPeriod" selected>Periodo Anterior</option>
+                                        <option value="lastYear">Ano Passado</option>
+                                        <option value="customPeriod">Periodo Personalizado</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="card-title">Filtro</h5>
+                                    <select class="form-control">
+                                        <option value="all" selected>Todos</option>
+                                        <option value="burgers">Burgers</option>
+                                        <option value="fries">Batatas Fritas</option>
+                                        <option value="drinks">Bebidas</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Produtos</th>
+                                            <th>Vendas Brutas</th>
+                                            <th>% de participação</th>
+                                            <th>Unidades Vendidas</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="media">
+                                                    <img src="../public/images/burguer1.jpg" class="align-self-center mr-3"
+                                                        alt="Burguer 1">
+                                                    <div class="media-body">
+                                                        <h5 class="mt-0">#3278455042</h5>
+                                                        <p class="mb-0">Burguer 1</p>
+                                                        <span class="badge badge-secondary">Sem estoque</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>R$ 6.375</td>
+                                            <td>22,6%</td>
+                                            <td>127</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="media">
+                                                    <img src="../public/images/burguer2.jpg" class="align-self-center mr-3"
+                                                        alt="Burguer 2">
+                                                    <div class="media-body">
+                                                        <h5 class="mt-0">#3215164298</h5>
+                                                        <p class="mb-0">Burguer 2</p>
+                                                        <span class="badge badge-success">Ingredientes em estoque</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>R$ 3.239</td>
+                                            <td>11,5%</td>
+                                            <td>41</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="media">
+                                                    <img src="../public/images/burguer3.jpg" class="align-self-center mr-3"
+                                                        alt="Burguer 3">
+                                                    <div class="media-body">
+                                                        <h5 class="mt-0">#3344232165</h5>
+                                                        <p class="mb-0">Burguer 3</p>
+                                                        <span class="badge badge-success">Ingredientes em estoque</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>R$ 3.133</td>
+                                            <td>11,1%</td>
+                                            <td>32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="media">
+                                                    <img src="../public/images/burguer4.jpg" class="align-self-center mr-3"
+                                                        alt="Burguer 4">
+                                                    <div class="media-body">
+                                                        <h5 class="mt-0">#3526793883</h5>
+                                                        <p class="mb-0">Burguer 4</p>
+                                                        <span class="badge badge-secondary">Sem estoque</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>R$ 2.600</td>
+                                            <td>9,2%</td>
+                                            <td>52</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="media">
+                                                    <img src="../public/images/burguer5.jpg" class="align-self-center mr-3"
+                                                        alt="Burguer 5">
+                                                    <div class="media-body">
+                                                        <h5 class="mt-0">#3666679492</h5>
+                                                        <p class="mb-0">Burguer 5</p>
+                                                        <span class="badge badge-success">Ingredientes em estoque</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>R$ 2.370</td>
+                                            <td>8,4%</td>
+                                            <td>30</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../public/javascripts/script.js"></script>
+</body>
+
+</html>

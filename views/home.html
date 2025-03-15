@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- link CSS -->
+    <link rel="stylesheet" href="../public/stylesheets/home.css">
+
+    <!-- import Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- import icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- arrowModal -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+        <!-- contacts -->
+        <div class="contacts">
+        contact@example.com +1 94893-2833
+        </div>
+
+        <!-- inicial area -->
+        <div class="boasVindas">
+
+        <img src="../public/images/logoIfoodBranca.png" class="logoIfoodCabecalho">
+
+        <div class="containerAcoes">
+            <button>Início</button>
+            <button>Sobre</button>
+            <button>Serviços</button>
+            <button>Dashboard</button>
+            <button onclick="window.location.href='login.html';">Entrar</button>
+        </div>
+
+        <!-- content text -->
+        <div class="contentText">
+            <h3>Bem-Vindo ao i-food business</h3>
+
+            <p>Aqui no i-Food business você pode ter controle total sobre as suas finanças e alcançar estabilidade!</p>
+        </div>
+
+        
+    </div>
+
+        <!-- character IFood -->
+        <img src="../public/images/boneco ifood.png" class="bonecoIFood">
+
+        <!-- buttons with modal -->
+        <div class="modalButtons">
+            <button class="metasFinanceiras" id="btn_open_modalMF">
+                <img src="../public/images/metas financeiras.png" alt="ícone">Metas Financeiras
+            </button>
+
+            <button class="gastos" id="btn_open_modalG">
+                <img src="../public/images/gastos.png"alt="ícone">Gastos
+            </button>
+
+            <button class="recebimentos" id="btn_open_modalR">
+                <img src="../public/images/lucro.png"alt="ícone">Recebimentos
+            </button>
+
+            <button class="investimentos" id="btn_open_modalI">
+                <img src="../public/images/investimentos.png">Investimentos
+            </button>
+
+        </div>
+
+
+
+        <!-- pop-up content Metas Financeiras -->
+        <dialog id="dialogMF">
+            <h2>Metas Financeiras</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam<br> laboriosam odit deleniti a provident voluptatum mollitia<br> doloremque beatae fugit aspernatur.</p>
+
+            <img src="../public/images/ifood-logo.png" alt="ifood-logo">
+
+            
+            <a href="#"><i class='bx bx-chevron-right' id="buttonArrow"></i></a>
+
+            <div>
+                <button id="cancelMF">Fechar</button>
+            </div>
+        </dialog>
+
+        <!-- pop-up content Gastos -->
+        <dialog id="dialogG">
+            <h2>Gastos</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam<br> laboriosam odit deleniti a provident voluptatum mollitia<br> doloremque beatae fugit aspernatur.</p>
+
+            <img src="../public/images/ifood-logo.png" alt="ifood-logo">
+
+            <a href="#"><i class='bx bx-chevron-right' id="buttonArrow"></i></a>
+
+            <div>
+                <button id="cancelG">Fechar</button>
+            </div>
+        </dialog>
+
+        <!-- pop-up content Recebimentos -->
+        <dialog id="dialogR">
+            <h2>Recebimentos</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam<br> laboriosam odit deleniti a provident voluptatum mollitia<br> doloremque beatae fugit aspernatur.</p>
+
+            <img src="../public/images/ifood-logo.png" alt="ifood-logo">
+
+            <a href="#"><i class='bx bx-chevron-right' id="buttonArrow"></i></a>
+
+            <div>
+                <button id="cancelR">Fechar</button>
+            </div>
+        </dialog>
+
+        <!-- pop-up content Investimentos -->
+        <dialog id="dialogI">
+            <h2>Investimentos</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam<br> laboriosam odit deleniti a provident voluptatum mollitia<br> doloremque beatae fugit aspernatur.</p>
+
+            <img src="../public/images/ifood-logo.png" alt="ifood-logo">
+
+            <a href="#"><i class='bx bx-chevron-right' id="buttonArrow"></i></a>
+
+            <div>
+                <button id="cancelI">Fechar</button>
+            </div>
+        </dialog>
+
+        <!-- <hr> -->
+
+            <!-- under titles -->
+            <div class="container">
+                <div class="section">
+                    <h2>iFood</h2>
+                    <ul>
+                        <li> <a href="#"> Institucional </a> </li>
+                        <li> <a href="#"> Conosco </a> </li>
+                        <li> <a href="#"> Carreiras </a></li>
+                        <li> <a href="#"> Entregadores </a></li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Descubra</h2>
+                    <ul>
+                        <li> <a href="#"> O que é o iFood? </a> </li>
+                        <li> <a href="#"> Shop </a> </li>
+                        <li> <a href="#"> Card </a> </li>
+                        <li> <a href="#"> iFood Empresas </a> </li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Social</h2>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+    <script src="../public/javascripts/script.js"></script>
+</body>
+</html>
